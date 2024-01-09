@@ -3,7 +3,7 @@ import grabUsername from "@/actions/grabUsername";
 import RightIcon from "../buttons/RightIcon";
 import { useState } from "react";
 import { redirect } from "next/navigation";
-import SubmitButton from "../buttons/submitButton";
+import SubmitButton from "../buttons/SubmitButton";
 
 
 

@@ -7,7 +7,7 @@ import {useState} from "react";
 import toast from "react-hot-toast";
 import {ReactSortable} from "react-sortablejs";
 import SectionBox from "../layout/sectionBox";
-import SubmitButton from "../buttons/submitButton";
+import SubmitButton from "../buttons/SubmitButton";
 import { upload } from "../../../lib/upload";
 
 export default function PageLinksForm({page,user}) {

@@ -16,7 +16,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {useState} from "react";
 import toast from "react-hot-toast";
 import SectionBox from "../layout/sectionBox";
-import SubmitButton from "../buttons/submitButton";
+import SubmitButton from "../buttons/SubmitButton";
 
 export const allButtons = [
   {key: 'email', 'label': 'e-mail', icon: faEnvelope, placeholder: 'test@example.com'},

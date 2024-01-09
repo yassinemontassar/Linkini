@@ -1,0 +1,14 @@
+version: '3.9' 
+
+services:
+  nextapp:
+    container_name: nextapp-linkini
+    image: linkini/nextapp-linkini:v1.0
+    build: . 
+    ports:
+      - "3000:3000"
+    volumes:
+      - uploaded_images:/app/public/uploads
+
+volumes:
+  uploaded_images:

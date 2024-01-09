@@ -9,11 +9,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import RadioTogglers from "../formItems/radioTogglers";
 import Image from "next/image";
 import { savePageSettings } from "@/actions/pageActions";
-import SubmitButton from "../buttons/submitButton";
 import toast from "react-hot-toast";
 import { useState } from "react";
 import SectionBox from "../layout/sectionBox";
 import { upload } from "../../../lib/upload";
+import SubmitButton from "../buttons/SubmitButton";
 
 
 
