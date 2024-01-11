@@ -36,13 +36,13 @@ export default async function userPage({ params }) {
   const uri = params.uri;
   const page = await prisma.page.findUnique({ where: {uri: uri},});
   const user = await prisma.user.findUnique({ where: {email: page.owner},});
-  //   await prisma.event.create({
-  //   data: {
-  //   type: 'view',
-  //   page: uri,
-  //   uri: uri,    
-  //   },
-  // })
+    await prisma.event.create({
+    data: {
+    type: 'view',
+    page: uri,
+    uri: uri,    
+    },
+  })
 
   return (
     <div className="bg-blue-950  text-white min-h-screen">
@@ -61,6 +61,7 @@ export default async function userPage({ params }) {
         src={user.image}
         alt="avatar"
         width={256} height={256}
+        
       />
     </div>
     <h2 className="text-2xl text-center mb-1">{page.displayName}</h2>
@@ -86,7 +87,7 @@ export default async function userPage({ params }) {
         <Link
           key={link.url}
           target="_blank"
-        ping={process.env.URL+'api/click?url='+ btoa(link.url)+'&page='+page.uri}
+          ping={process.env.URL+'/api/click?url='+ btoa(link.url)+'&page='+page.uri}
           className="bg-indigo-800 p-2  flex"
           href={link.url}>
           <div className="relative -left-4 overflow-hidden w-16">

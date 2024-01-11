@@ -43,6 +43,8 @@ export default function PageSettingsForm({ page, user }) {
     await upload(ev, (link) => {
       setAvatar(link);
     });
+
+    console.log('Avatar Image:', avatar);
   }
   return (
     <div>
@@ -102,13 +104,15 @@ export default function PageSettingsForm({ page, user }) {
         <div className="flex justify-center -mb-12">
           <div className="relative -top-8 w-[128px] h-[128px]">
             <div className="overflow-hidden h-full rounded-full border-4 border-white shadow shadow-black/50">
-              <Image
-                className="w-full h-full object-cover"
-                src={avatar}
-                alt={"avatar"}
-                width={128}
-                height={128}
-              />
+            <Image
+  key={avatar} // Add a key to force a re-render when avatar changes
+  className="w-full h-full object-cover"
+  src={avatar}
+  alt="avatar"
+  width={128}
+  height={128}
+  loader={({ src }) => `${src}`}
+/>
             </div>
             <label
               htmlFor="avatarIn"
