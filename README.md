@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Linkini
+
+![image](https://github.com/yassinemontassar/Linkini/assets/117606968/6e247c84-0930-461e-91a8-8c256f519b95)
+
+
+## Overview
+
+Linkini is a web application built using Next.js 14 and JavaScript, inspired by the concept of Linktree. It provides users with a personalized landing page where they can aggregate and showcase their online presence through various social media links.
+
+## Features
+
+
+### User Authentication
+
+- Users can seamlessly log in using their Google accounts, ensuring a secure and familiar authentication process.
+![image](https://github.com/yassinemontassar/Linkini/assets/117606968/fdd816e4-58f2-45c7-bdd6-cd63ed882029)
+
+### Profile Customization
+
+- Users have the ability to choose a unique username that represents their online identity.
+- Personalize your profile by uploading a profile picture and customizing the background with either a color or an image.
+  ![image](https://github.com/yassinemontassar/Linkini/assets/117606968/771b5a0c-75d2-4724-96ee-985e6870116b)
+
+
+### Social Media Buttons
+
+- Create multiple buttons, each linking to your various social media accounts, making it easy for visitors to connect with you across platforms.
+
+### Custom Links
+
+- Users can add and manage their own links, allowing for the promotion of websites, blog posts, or any other online content.
+  ![image](https://github.com/yassinemontassar/Linkini/assets/117606968/37f33980-1ede-468f-ae56-cb7a043211d7)
+
+
+### Statistics Dashboard
+
+- Gain insights into your profile's performance with detailed statistics.
+- View analytics such as 3D charts depicting views, clicks, and other relevant metrics.
+  ![image](https://github.com/yassinemontassar/Linkini/assets/117606968/e3b53216-0d83-482c-bee0-f4085e624afe)
+
+
+### Mobile Responsiveness
+
+- The application is designed to be highly responsive, ensuring a seamless experience for users on various devices, including mobile phones and tablets.
+
+  ![image](https://github.com/yassinemontassar/Linkini/assets/117606968/e50b39fc-7682-4b9c-89d0-bac533cd206f)
+  ![image](https://github.com/yassinemontassar/Linkini/assets/117606968/9cb10346-206f-459c-a12b-e9ebb9e5a748)
+
+
+
+  ### Database
+
+- Utilizes Prisma as the database ORM (Object-Relational Mapping) for seamless communication with the underlying PostgreSQL database.
 
 ## Getting Started
 
-First, run the development server:
+Follow these steps to get your project up and running locally.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Prerequisites
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Ensure you have [Node.js](https://nodejs.org/) installed.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Installation 
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Clone the repository.
+   ```bash
+   git clone https://github.com/yassinemontassar/Linkini
